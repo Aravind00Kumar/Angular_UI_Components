@@ -3,36 +3,41 @@
 <head>
     <title></title>
     <!-- styles-->
+    <link href="Content/font-awesome.css" rel="stylesheet" />
     <link href="Content/main.css" rel="stylesheet" />
 </head>
 <body ng-controller="AppController">
 
-    <ui-list items="areas.list" selected="areas.current">
-    </ui-list>
+    <div>
+        <ui-list items="areas.list" selected="areas.current" orientation="horizontal"></ui-list>
+    </div>
 
-    <ui-list items="apps.list" selected="apps.current">
-    </ui-list>
+    <!--<ui-list class="ui-list" items="apps.list" selected="apps.current">
+    </ui-list>-->
 
-    <ui-dropdown>
-        <ui-trigger>
-            <span ng-bing="apps.current"></span>
-        </ui-trigger>
-        <ui-target>
-            <ui-list items="apps.list" selected="apps.current">
-            </ui-list>
-        </ui-target>
-    </ui-dropdown>
 
+    <div style="width:250px;">
+        <ui-dropdown>
+            <ui-trigger>
+                <span ng-bind="apps.current"></span>
+            </ui-trigger>
+            <ui-target>
+                <ui-list items="apps.list" selected="apps.current">
+                </ui-list>
+            </ui-target>
+        </ui-dropdown>
+    </div>
 
     <!-- vendor scripts-->
     <script src="Scripts/angular.js"></script>
 
-    <!--components-->
     <!-- project scripts-->
     <script src="app/app.js"></script>
 
+    <!--components-->
     <script src="app/components/components-module.js"></script>
     <script src="app/components/list/ui-list-directive.js"></script>
+    <script src="app/components/dropdown/ui-dropdown-directive.js"></script>
 
 
 </body>

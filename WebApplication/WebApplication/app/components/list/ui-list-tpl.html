@@ -1,6 +1,6 @@
-﻿<ul>
+﻿<ul class="ui-list" ng-class="orientation">
     <li ng-repeat="item in items"
         ng-bind="item"
         ng-class="{'ui-selected': item===selected}"
-        ng-click="selectedItem(item)"> item </li>
+        ng-click="selectedItem(item)">item</li>
 </ul>
