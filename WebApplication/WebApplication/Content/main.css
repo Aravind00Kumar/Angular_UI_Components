@@ -1,0 +1,15 @@
+﻿body {
+  background: #f1f1f1;
+}
+/* dropdown styles */
+.ui-dropdown {
+  border: 1px solid blue;
+}
+.ui-selected {
+  border: 1px solid red;
+}
+.ui-options {
+  border: 1px solid green;
+  background: rgba(128, 128, 128, 0.003);
+}
+/*# sourceMappingURL=main.css.map */

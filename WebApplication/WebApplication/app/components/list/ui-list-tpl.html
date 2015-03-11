@@ -1,0 +1,6 @@
+﻿<ul>
+    <li ng-repeat="item in items"
+        ng-bind="item"
+        ng-class="{'ui-selected': item===selected}"
+        ng-click="selectedItem(item)"> item </li>
+</ul>
