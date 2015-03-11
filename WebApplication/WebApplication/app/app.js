@@ -16,6 +16,7 @@
                 current: 'Java'
             }
 
+            $scope.searchQuery = '';
 
         }]);
 

@@ -1,5 +1,5 @@
 ﻿body {
-    background: #f1f1f1;
+    background: #fff;
 }
 
 /* dropdown styles */
@@ -9,25 +9,24 @@
 
 ul.ui-list {
     list-style: none;
-    padding: 2px;
     margin: 0;
-
+    padding:0;
+    width:100%;
+    background:#fafafa;
     & li {
         list-style-type: none;
         padding: 10px;
         margin: 0;
-        background: #fff;
+        background: #f6f6f6;
         color: #333;
         cursor: pointer;
-        float: left;
-
         &:hover {
-            background: fade(#047194, .4);
+            background: lighten(#000, 90);
         }
 
         &.ui-selected {
             background: #047194;
-            color: #FFF;
+            color: #f1f1f1;
         }
     }
 
@@ -56,12 +55,11 @@ ul.ui-list {
     & .ui-trigger {
         padding: 10px;
         margin: 0;
-        background: #fff;
+        background: #f1f1f1;
         color: #333;
         cursor: pointer;
-
         &:hover {
-            background: fade(#047194, .4);
+            background: #e1e1e1;
         }
 
         &.icon {

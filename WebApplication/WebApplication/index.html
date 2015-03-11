@@ -8,25 +8,27 @@
 </head>
 <body ng-controller="AppController">
 
-    <div>
-        <ui-list items="areas.list" selected="areas.current" orientation="horizontal"></ui-list>
-    </div>
-
-    <!--<ui-list class="ui-list" items="apps.list" selected="apps.current">
-    </ui-list>-->
+    <h3>List</h3>
+    <ui-list items="areas.list" selected="areas.current" orientation="horizontal"></ui-list>
 
 
+    <h3>Dropdown demo</h3>
     <div style="width:250px;">
         <ui-dropdown>
             <ui-trigger>
                 <span ng-bind="apps.current"></span>
             </ui-trigger>
             <ui-target>
-                <ui-list items="apps.list" selected="apps.current">
-                </ui-list>
+                <!--<ui-list items="apps.list" selected="apps.current"></ui-list>-->
+                <div>
+                    alkdjaldjaldakl
+                </div>
             </ui-target>
         </ui-dropdown>
     </div>
+
+    <h3>Search box demo</h3>
+    <ui-searchbox ng-bind="searchQuery"></ui-searchbox>
 
     <!-- vendor scripts-->
     <script src="Scripts/angular.js"></script>

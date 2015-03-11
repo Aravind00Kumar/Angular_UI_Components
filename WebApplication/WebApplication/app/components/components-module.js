@@ -6,6 +6,7 @@
         [
             'app.components.list',
             'app.components.dropdown',
+            //'app.components.searchbox',
         ]);
 
     //module.constant('PATH', {
